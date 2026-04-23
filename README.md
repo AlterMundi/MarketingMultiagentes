@@ -1,6 +1,6 @@
 # Marketing Multiagentes — DaemonCraft
 
-Repo central para todos los activos de marketing, contenido y growth de DaemonCraft.
+Repo central para marketing, branding, contenido y growth de DaemonCraft.
 
 ## Estructura
 
@@ -10,37 +10,33 @@ content/
   email-funnel/       # Emails de onboarding y nutrición
   blog/               # Artículos técnicos y de marca
   video/              # Scripts, storyboards, assets de video
-  pr/                 # Press releases, kit de prensa
+  pr/                 # Press releases, kit de prensa, deck
   influencers/        # Investigación, pitches, seguimiento
 
 assets/
+  brand/              # Logos, paletas, guías, skins
   imagenes/           # Imágenes generadas, screenshots
   videos/             # Videos exportados
-  brand/              # Logos, paletas, guías de marca
 
 data/
   metrics/            # Métricas de growth
   experiments/        # Resultados de experimentos A/B
+
+docs/                 # Documentación estratégica
 ```
 
 ## Agentes
 
-Cada carpeta tiene un "dueño" (agente) responsable:
+| Agente | Carpeta | Estado |
+|--------|---------|--------|
+| **Marca** | assets/brand, content/video | 🟡 Activo |
+| **Growth** | content/influencers, content/pr, data/ | 🟡 Activo |
+| **Community** | content/blog, content/email-funnel | 🟡 Activo |
 
-| Carpeta | Agente | Estado |
-|---------|--------|--------|
-| content/redes-sociales | Agente Marca | 🟡 Activo |
-| content/email-funnel | Agente Growth | 🟡 Activo |
-| content/blog | Agente Marca + Tech | 🔴 Pendiente |
-| content/video | Agente Marca | 🟡 Activo |
-| content/pr | Agente Growth | 🔴 Pendiente |
-| content/influencers | Agente Growth | 🟡 Activo |
-| assets/ | Agente Marca | 🟡 Activo |
-| data/ | Agente Growth | 🔴 Pendiente |
+## Tablero
+Ver [[KANBAN.md]] para estado actual.
 
 ## Cómo trabajar
-
 1. Cada agente trabaja en su branch: `agente/[nombre]`
 2. PRs a `main` para integrar
 3. La memoria vive en Obsidian: `~/Documents/Obsidian Vault/DaemonCraft/`
-4. Daily sync automático entre agentes
